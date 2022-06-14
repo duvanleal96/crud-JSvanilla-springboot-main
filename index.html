@@ -27,10 +27,14 @@
     </style>
   </head>
   <body>
-        
+   
     <div class="container mt-4 shadow-lg p-3 mb-5 bg-body rounded">        
         <button id="btnCrear" type="button" class="btn btn-primary" data-bs-toggle="modal"  data-bs-target="#modalUsuario">Crear</button>
         <table id="tablaUsuarios" class="table mt-2 table-bordered table-striped">
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Busqueda por correo" aria-label="Busqueda por correo" aria-describedby="button-addon2">
+            <button class="btn btn-primary" type="button" id="button-addon2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Eliminar por Correo</font></font></button>
+          </div>
             <thead>
                 <tr class="text-center">
                     <th>ID</th>
@@ -71,6 +75,8 @@
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         <button type="submit" class="btn btn-primary">Guardar</button>
       </div>
+    </div>
+  </div>
     </form>
     </div>
   </div>
