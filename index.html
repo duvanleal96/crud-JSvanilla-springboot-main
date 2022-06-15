@@ -14,7 +14,7 @@
 <!-- Default theme -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/AlertifyJS/1.13.1/css/themes/default.min.css" integrity="sha512-RgUjDpwjEDzAb7nkShizCCJ+QTSLIiJO1ldtuxzs0UIBRH4QpOjUU9w47AF9ZlviqV/dOFGWF6o7l3lttEFb6g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.min.css"/> -->
-<link rel="stylesheet" href="https://bootswatch.com/5/quartz/bootstrap.min.css">
+<link rel="stylesheet" href="https://bootswatch.com/5/vapor/bootstrap.min.css">
     <title>Fetch CRUD</title>
     <style>
         body{
@@ -31,10 +31,14 @@
     <div class="container mt-4 shadow-lg p-3 mb-5 bg-body rounded">        
         <button id="btnCrear" type="button" class="btn btn-primary" data-bs-toggle="modal"  data-bs-target="#modalUsuario">Crear</button>
         <table id="tablaUsuarios" class="table mt-2 table-bordered table-striped">
+          <br>
+          <br>
           <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Busqueda por correo" aria-label="Busqueda por correo" aria-describedby="button-addon2">
-            <button class="btn btn-primary" type="button" id="button-addon2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Eliminar por Correo</font></font></button>
+            <input type="text" id="input_correo" class="form-control" placeholder="Busqueda por correo " >
+            <button class="btn btn-primary" type="button" id="button-addon2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Buscar por correo</font></font></button>
+            <button type="button" id="botonBorrar"class="btn btn-primary">Eliminar por correo</button>
           </div>
+          
             <thead>
                 <tr class="text-center">
                     <th>ID</th>
